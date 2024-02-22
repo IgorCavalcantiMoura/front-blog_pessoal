@@ -9,7 +9,11 @@ import Cadastro from './paginas/cadastro/Cadastro'
 import { AuthProvider } from './contexts/AuthContext'
 import ListaTemas from './componentes/temas/listaTemas/ListaTemas'
 import FormularioTema from './componentes/temas/formularioTemas/FormularioTema'
+import ListaPostagens from './componentes/postagens/listaPostagens/ListaPostagens'
 import DeletarTema from './componentes/temas/deletarTema/DeletarTema'
+import FormularioPostagem from './componentes/postagens/formularioPostagem/FormularioPostagem'
+import DeletarPostagem from './componentes/postagens/deletarPostagem/DeletarPostagem'
+
 
 
 function App() {
@@ -28,7 +32,10 @@ function App() {
               <Route path="/cadastroTema" element={<FormularioTema />} />
               <Route path="/editarTema/:id" element={<FormularioTema />} />
               <Route path="/deletarTema/:id" element={<DeletarTema />} />
-
+              <Route path="/postagens" element={<ListaPostagens />} />
+              <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
+              <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
+              <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
             </Routes>
           </div>
           <Footer />
